@@ -6,10 +6,7 @@ var MedianFinder = function() {
     
 };
 
-/** 
- * @param {number} num
- * @return {void}
- */
+
 MedianFinder.prototype.addNum = function(num) {
 
     this.smallVals.push(num)
@@ -42,9 +39,6 @@ MedianFinder.prototype.addNum = function(num) {
     
 };
 
-/**
- * @return {number}
- */
 MedianFinder.prototype.findMedian = function() {
     
     if (this.smallVals.length > this.largeVals.length) return this.smallVals.at(-1)
